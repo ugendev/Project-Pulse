@@ -1,0 +1,357 @@
+@media ( max-width: 1200px ) {
+    .container {
+        width: 800px;
+    }
+
+    .header {
+        &__logo {
+            img {
+                width: 85%;
+            }
+        }
+
+        &__official {
+            font-size: 11px;
+            line-height: none;
+
+            span {
+                font-size: 17px;
+                margin-top: 6px;
+            }
+        }
+
+        &__call {
+            font-size: 16px;
+        } 
+    }
+
+    .button {
+        width: 138px;
+        height: 28px;
+        font-size: 11px;
+    }
+
+    .button_consultation {
+        margin-top: 50px;
+        width: 250px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .main {
+        min-height: 600px;
+
+        &__title {
+            line-height: none;
+            font-size: 37px;
+        }
+
+        &__subtitle {
+            margin-top: 0;
+            font-size: 21px;
+        }
+
+        &__icons {
+            margin-top: 55px;
+            width: 375px;
+
+            img[alt="Таймер"] {
+                width: 30%;
+            }
+
+            img[alt="Тележка"] {
+                width: 46%;
+            }
+
+            img[alt="Сообщения"] {
+                width: 38%;
+            }
+        }
+
+        &__catalog {
+            font-size: 15px;
+        }
+    }
+
+    .advantages {
+        &__header {
+            font-size: 27px;
+        }
+
+        &__title {
+            font-size: 17px;
+            margin-top: 26px;
+        }
+
+        &__text {
+            margin-top: 14px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media ( max-width: 1000px ) {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .button {
+        width: 125px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .button_consultation {
+        margin-top: 100px;
+        width: 240px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .main {
+        background-position-x: left;
+        padding: 21px 35px 70px 35px;
+
+        &__offer {
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 33px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__icons {
+            margin-top: 49px;
+        }
+
+        &__descr {
+            font-size: 13px;
+        }
+
+        &__catalog {
+            font-size: 14px;
+        }
+    }
+
+    .header {
+        &__logo {
+            img {
+                width: 72%;
+            }
+        }   
+
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 15px;
+            }
+        }
+
+        &__call {
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .advantages {
+        &__item {
+            img {
+                width: 45px;
+            }
+        }   
+
+        &__icons {
+            justify-content: space-around
+        }
+
+        &__header {
+            font-size: 21px;
+        }
+
+        &__title {
+            font-size: 15px;
+        }
+
+        &__text {
+            width: 200px;
+            font-size: 11px;
+        }
+    }
+}
+
+@media ( max-width: 760px ) {
+    .button_consultation {
+        width: 230px;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .header {
+        &__logo img {
+            width: 85%;
+        }
+
+        &__official {
+            font-size: 9px;
+
+            span {
+                margin-top: 2px;
+                font-size: 13px;
+            }
+        }
+
+        &__call a {
+            font-size: 13px;
+        }
+
+        .button {
+            width: 105px;
+            height: 19px;
+            font-size: 9px;
+        }
+    }
+
+    .main {
+        &__title {
+            font-size: 25px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            margin-top: -7px;
+        }
+
+        &__icons {
+            width: 250px;
+            margin-top: 35px;
+        }
+
+        &__descr {
+            font-size: 10px;
+            margin-top: 10px;
+            line-height: 15px;
+        }
+
+        .button_consultation {
+            width: 190px;
+            height: 30px;
+            font-size: 11px;
+            margin-top: 80px;
+        }
+
+        &__catalog {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+    }
+
+    .advantages {
+        padding-top: 30px;
+        padding-right: 60px;
+        padding-left: 60px;
+
+        &__header {
+            font-size: 16px;
+        }
+
+        &__icons {
+            margin-top: 0;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            img {
+                width: 60px;
+                margin-right: 20px;
+            }
+        }
+
+        &__item {
+            margin-top: 20px;
+            flex-direction: row;
+        }
+
+        &__text {
+           text-align: left;
+        }
+
+        &__title {
+            text-align: left;
+        }
+    }
+}
+
+@media ( max-width: 560px ) {
+    .main {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        &__icons {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__item {
+            margin-top: 20px;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                margin-right: 10px;
+                width: 15% !important;
+            }
+        }
+
+        &__descr {
+            margin-top: 0;
+            font-size: 14px;
+            br {
+                display: none;
+            }
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__subtitle {
+            font-size: 12px;
+        }
+    }
+
+    .header {
+        margin-left: -10px;
+        margin-right: -25px;
+
+        &__official {
+            display: none;
+        }
+
+        &__logo {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__call {
+            width: 50%;
+           a {
+               font-size: 11px;
+           } 
+        }
+
+        .button {
+            height: 22px;
+        }
+    }
+
+    // .advantages {
+
+    // }
+}
