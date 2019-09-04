@@ -10,10 +10,14 @@
 	margin: 0 auto;
 }
 
-@import "blocks/main";
 @import "blocks/button";
 @import "blocks/header";
-@import "blocks/_advantages";
+@import "blocks/title";
+@import "blocks/form";
+
+@import "blocks/main";
+@import "blocks/advantages";
+@import "blocks/consultations";
 
 @import "media";
 
