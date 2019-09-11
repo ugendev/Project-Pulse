@@ -1,0 +1,65 @@
+.slider {
+	padding: 80px 0;
+
+	&__wrapper {
+		position: relative;
+		overflow: hidden;
+		height: 580px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__item {
+		margin: 0 75px;
+
+		img {
+			pointer-events: none;
+		}
+	}
+
+	&__prev, &__next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+
+	&__prev {
+		left: 0;
+	}
+
+	&__next {
+		right: 0;
+	}
+}
+
+.toLeft {
+	animation-name: toLeft;
+	animation-duration: 1.2s;
+	animation-fill-mode: forwards;
+}
+
+.toRight {
+	animation-name: toRight;
+	animation-duration: 1.2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes toLeft {
+	from {
+		transform: none;
+	}
+	to {
+		transform: translateX(-900px);
+	}
+}
+
+@keyframes toRight {
+	from {
+		transform: none;
+	}
+	to {
+		transform: translateX(900px);
+	}
+}
