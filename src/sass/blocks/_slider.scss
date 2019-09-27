@@ -23,6 +23,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		cursor: pointer;
+		z-index: 1;
 	}
 
 	&__prev {
@@ -36,13 +37,13 @@
 
 .toLeft {
 	animation-name: toLeft;
-	animation-duration: 1.2s;
+	animation-duration: .5s;
 	animation-fill-mode: forwards;
 }
 
 .toRight {
 	animation-name: toRight;
-	animation-duration: 1.2s;
+	animation-duration: .5s;
 	animation-fill-mode: forwards;
 }
 
@@ -62,4 +63,9 @@
 	to {
 		transform: translateX(900px);
 	}
+}
+
+.swipeAnim {
+	transition-property: transform;
+	transition-duration: .5s;
 }
