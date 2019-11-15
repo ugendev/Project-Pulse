@@ -163,4 +163,44 @@ window.addEventListener("DOMContentLoaded", function() {
 	itemsWrapper.addEventListener("transitionend", actAfterTrans);
 
 	setOrder();
+
+	// TABS:
+
+	let 
+		tabsContent = document.querySelectorAll(".catalog__tab-content"),
+		tabsBar 	= document.querySelector(".catalog__tabs"),
+		tabs 		= document.querySelectorAll(".catalog__tab"),
+		tabsText 	= document.querySelectorAll(".catalog__tab div");
+
+	tabsBar.addEventListener("click", (event) => {
+		for (let x = 0; x < tabs.length; x++) {
+			if (event.target == tabs[x] || event.target == tabsText[x]) {
+				tabsContent[x].style.display = "flex";
+				tabs[x].classList.add("catalog__tab_active");
+			} else {
+				tabsContent[x].style.display = "none";
+				tabs[x].classList.remove("catalog__tab_active");
+			}
+		}
+	});
+
+	tabs[0].click();
+
+	// CARD SWITCH
+	
+	let 
+		card 	 	= document.querySelector(".card-product"),
+		moreDetails = document.querySelector(".card-product__toggle"),
+		back 		= document.querySelector(".card-product__toggle_back"),	
+		main 	 	= document.querySelector(".card-product__main"),
+		more 	 	= document.querySelector(".card-product__more");
+
+		card.addEventListener("click", (event) => {
+			if (event.target == moreDetails || event.target == back) {
+				event.preventDefault();
+				main.classList.toggle("switched");
+				more.classList.toggle("switched");
+			}
+
+		});
 });
