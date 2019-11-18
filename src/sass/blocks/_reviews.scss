@@ -1,0 +1,11 @@
+.reviews {
+    min-height: 925px;
+    padding-bottom: 70px;
+    
+    &__hr{
+        height: 1px;
+        background-color: #f6f6f6;
+        margin: 50px 0px;
+        border: none;
+    }
+}

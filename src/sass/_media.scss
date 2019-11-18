@@ -127,6 +127,44 @@
 			margin: 0 auto;
 		}
 	}
+
+	.catalog {
+		.title {
+			font-size: 25px;
+		}
+
+		&__tabs {
+			margin-top: 40px;
+			margin-bottom: 40px;
+
+			div {
+				font-size: 14px;
+			}
+		}
+
+		&__tab-content {
+			justify-content: space-around;
+		}
+	}
+
+	.reviews {
+		.container {
+			width: 75%;
+			margin: 0 auto;
+		}
+
+		.title {
+			font-size: 25px;
+		}
+	}
+
+	.review {
+		width: 100%;
+
+		&__content {
+			width: 70%;
+		}
+	}
 }
 
 @media ( max-width: 1000px ) {
@@ -262,6 +300,96 @@
 			transform: scale(.8, .8);
 		}
 	}
+
+	.catalog {
+		.title {
+			font-size: 20px;
+		}
+		.container {
+			width: 75%;
+			margin: 0 auto;
+		}
+
+		&__tabs {
+			margin-top: 30px;
+			width: 500px;
+			margin-bottom: 30px;
+
+			div {
+				font-size: 13px;
+			}
+		}
+
+		&__tab-content {
+			justify-content: space-around;
+		}
+	}
+
+	.card-product {
+		min-height: unset;
+		width: 250px;
+
+		img {
+			transform: scale(.8, .8);
+		}
+		
+		&__title {
+			font-size: 14px;
+			margin-top: 0;
+		}
+
+		&__descr {
+			font-size: 12px;
+			margin-top: 6px;
+		}
+
+		&__toggle, &__toggle_back {
+			font-size: 13px;
+			margin-top: 10px;
+		}
+
+		&__toggle_back {
+			margin-top: 20px;
+		}
+
+		&__old-price {
+			font-size: 12px;
+		}
+
+		&__price {
+			font-size: 15px;
+		}
+
+		&__more ul li{
+			font-size: 12px;
+		}
+	}
+
+	.review {
+		&__img {
+			transform: scale(0.8, 0.8);
+		}
+
+		&__title {
+			font-size: 15px;
+		}
+
+		&__subtitle {
+			margin-top: 3px;
+			font-size: 12px;
+		}
+	
+		&__descr {
+			margin-top: 12px;
+			color: #0d0d0d;
+			font-size: 14px;
+		}
+
+		&__space {
+			height: 12px;
+		}
+	}
+
 }
 
 @media ( max-width: 760px ) {
@@ -405,6 +533,91 @@
 			transform: scale(.7, .7);
 		}
 	}
+
+	.catalog {
+		.container {
+			width: 90%;
+		}
+
+		&__tabs {
+			width: 100%;
+
+			div {
+				font-size: 12px;
+			}
+		}
+
+		&__tab {
+			height: 40px;
+		}
+	}
+
+	.card-product {
+		width: 380px;
+
+		img {
+			transform: scale(1, 1);
+		}
+
+		&__title {
+			font-size: 16px;
+			margin-top: 8px;
+		}
+
+		&__descr {
+			font-size: 14px;
+		}
+
+		&__toggle, &__toggle-back {
+			font-size: 16px;
+		}
+
+		&__old-price {
+			font-size: 14px;
+		}
+
+		&__price {
+			font-size: 18px;
+		}
+	}
+
+	.button_buy {
+		width: 180px;
+		height: 45px;
+		font-size: 15px;
+	}
+
+	.reviews {
+		.container {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+
+	.review {
+		align-items: center;
+
+		&__content {
+			width: 100%;
+		}
+
+		&__title {
+			font-size: 13px;
+		}
+
+		&__descr {
+			font-size: 12px;
+		}
+
+		&__subtitle {
+			font-size: 11px;
+		}
+
+		&__img {
+			width: 25%;
+		}
+	}
 }
 
 @media ( max-width: 560px ) {
@@ -512,6 +725,30 @@
 			transform: scale(.5, .5);
 		}
 	}
+
+	.reviews {
+		.title {
+			font-size: 25px;
+		} 
+	}
+
+	.review {
+		flex-direction: column;
+
+		&:nth-child(2) {
+			margin-top: 20px;
+		}
+
+		&__img {
+			width: 50%;
+			transform: scale(1,1);
+			margin-bottom: 15px;
+		}
+
+		&__content {
+			text-align: center;
+		}
+	}
 }
 
 @media ( max-width: 410px ) {
@@ -524,4 +761,30 @@
 			transform: scale(.4, .4);
 		}
 	}	
+
+	.catalog {
+		.title {
+			font-size: 16px;
+		}
+
+		&__tab {
+
+			div {
+				font-size: 10px;
+			}
+		}
+	}
+
+	.advantages {
+		.title {
+			font-size: 24px;
+		}
+	}
+
+	.reviews {
+		.title {
+			font-size: 20px;
+		}
+	}
+
 }
