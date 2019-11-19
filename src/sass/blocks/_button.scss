@@ -11,6 +11,7 @@
     text-align: center;
     outline: none;
     border: none;
+    transition: .7s box-shadow;
 
     &_consultation {
         margin-top: 67px;
@@ -29,4 +30,9 @@
         height: 40px;
         font-size: 14px;
     }
+
+    &:hover {
+        box-shadow: 0 0 15px $main-color;
+    }
+
 }

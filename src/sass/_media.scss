@@ -165,6 +165,35 @@
 			width: 70%;
 		}
 	}
+
+	.footer {
+		&__content {
+			width: 400px;
+			height: 220px;
+			padding: 40px 55px 40px;
+		}
+
+		&__address, &__tel {
+			font-size: 16px;
+		}
+
+		&__tel {
+			margin-top: 20px;
+		}
+
+		&__social-icons {
+			margin-top: 15px;
+		}
+
+		&__social-icon {
+			height: 20px;	
+		}
+
+		&__cirle {
+			height: 40px;
+			width: 40px;
+		}
+	}
 }
 
 @media ( max-width: 1000px ) {
@@ -387,6 +416,35 @@
 
 		&__space {
 			height: 12px;
+		}
+	}
+
+	.footer {
+		&__content {
+			width: 350px;
+			height: 180px;
+			padding: 35px 45px 35px;
+		}
+
+		&__address, &__tel {
+			font-size: 14px;
+		}
+
+		&__tel {
+			margin-top: 15px;
+		}
+
+		&__social-icons {
+			margin-top: 12px;
+		}
+
+		&__social-icon {
+			height: 17px;	
+		}
+
+		&__cirle {
+			height: 30px;
+			width: 30px;
 		}
 	}
 
@@ -784,6 +842,35 @@
 	.reviews {
 		.title {
 			font-size: 20px;
+		}
+	}
+
+	.footer {
+		&__content {
+			width: 320px;
+			height: 170px;
+			padding: 25px 15px 10px;
+		}
+
+		&__address, &__tel {
+			font-size: 16px;
+		}
+
+		&__tel {
+			margin-top: 20px;
+		}
+
+		&__social-icons {
+			margin-top: 15px;
+		}
+
+		&__social-icon {
+			height: 20px;	
+		}
+
+		&__cirle {
+			height: 40px;
+			width: 40px;
 		}
 	}
 
