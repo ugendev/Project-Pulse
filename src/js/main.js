@@ -203,4 +203,59 @@ window.addEventListener("DOMContentLoaded", function() {
 			}
 
 		});
+
+	// modal windows
+
+	let 
+		modalBg 		= document.querySelector(".modal-bg"),
+
+		consBtns		= document.querySelectorAll("[data-modal=consultation]"),
+		consModal		= document.querySelector(".modal"),
+
+		buyBtns			= document.querySelectorAll(".button_buy"),
+		orderModal		= document.querySelectorAll(".modal")[1],
+
+		thanksModal		= document.querySelectorAll(".modal")[2],
+
+		x 				= document.querySelectorAll(".modal__x"),
+
+		productTitle	= document.querySelectorAll(".card-product__title");
+
+	x.forEach(function(value) { 
+		value.addEventListener("click", function() {
+			modalBg.classList.add("fadeOut");
+			modalBg.addEventListener("animationend", function() {
+				modalBg.classList.remove("fadeIn", "fadeOut");
+			}, 
+			{once:true}
+			);
+		});
+	});
+
+	consBtns.forEach(function(value) {
+		value.addEventListener("click", function() {
+			consModal.style.display = "block";
+			modalBg.classList.add("fadeIn");
+		});
+	});
+
+	buyBtns.forEach(function(value) {
+		value.addEventListener("click", function(event) { 
+			let title = "";
+			let index = 0;
+			buyBtns.forEach(function(value, key) {
+				if (event.target == value) {
+					index = key;
+				}
+			});
+			productTitle.forEach(function(value, key) {
+				if (key == index) { 
+					title = value.textContent;
+				}
+			});
+			orderModal.children[2].textContent = title;
+			orderModal.style.display = "block";
+			modalBg.classList.add("fadeIn");
+		});
+	});
 });

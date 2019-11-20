@@ -31,7 +31,7 @@
 						+7 (499) 922-89-74
 					</a>
 
-					<button class="button">
+					<button class="button" data-modal="consultation">
 						заказать звонок
 					</button>
 				</div>
@@ -78,7 +78,7 @@
 					</div>
 				</div>
 
-				<button class="button button_consultation">
+				<button class="button button_consultation" data-modal="consultation">
 					заказать консультацию
 				</button>
 
@@ -1315,6 +1315,71 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal-bg">
+		<div class="modal">
+			<div class="modal__x">
+				&times;
+			</div>
+
+			<div class="modal__title">
+				Просто заполните форму заявки
+			</div>
+
+			<div class="modal__subtitle">
+				и мы перезвоним вам в течении 10 минут
+			</div>
+
+			<form action="#" class="form">
+				<input type="text" name="name" class="form__input" required placeholder="Ваше имя">
+				<input type="tel" name="phone" class="form__input" required placeholder="Ваш телефон">
+				<input type="email" name="email" class="form__input" required placeholder="Ваш E-mail">
+
+				<button class="button button_consultation button_form-button">
+					заказать консультацию
+				</button>
+			</form>
+		</div>
+
+		<div class="modal">
+			<div class="modal__x">
+				&times;
+			</div>
+
+			<div class="modal__title">
+				Ваш заказ:
+			</div>
+
+			<div class="modal__subtitle">
+				js will fills this
+			</div>
+
+			<form action="#" class="form">
+				<input type="text" name="name" class="form__input" required placeholder="Ваше имя">
+				<input type="tel" name="phone" class="form__input" required placeholder="Ваш телефон">
+				<input type="email" name="email" class="form__input" required placeholder="Ваш E-mail">
+
+				<button class="button button_consultation button_form-button">
+					заказать
+				</button>
+			</form>
+		</div>
+
+		<div class="modal modal_thanks">
+			<div class="modal__x">
+				&times;
+			</div>
+
+			<div class="modal__title">
+				Спасибо за вашу заявку!
+			</div>
+
+			<div class="modal__subtitle">
+				Наш менеджер свяжется с вами 
+				в ближайшее время!
+			</div>
+		</div>
+	</div>
 
 	<script src="js/main.js"></script>
 </body>
