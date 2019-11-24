@@ -13,4 +13,19 @@
     form {
         margin-top: 36px;
     }
+    .error {
+        border: 1px solid red;
+    }
+
+    label.error {
+        color: #fff;
+        display: block;
+        text-align:center;
+        border: none;
+        margin-bottom: 10px;
+
+        &:nth-child(4) {
+            margin-top: 10px;
+        }
+    }
 }

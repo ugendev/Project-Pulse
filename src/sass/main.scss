@@ -1,4 +1,7 @@
 @import "base/vars";
+@import "libs/fonts";
+@import "libs/bootstrap-reboot.min";
+
 
 * {
 	font-family: "Museo Sans Cyrl";
@@ -25,5 +28,6 @@
 @import "blocks/reviews";
 @import "blocks/footer";
 @import "blocks/modal";
+@import "blocks/up";
 
 @import "media";

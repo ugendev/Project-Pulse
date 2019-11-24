@@ -1,0 +1,13 @@
+.up {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+
+    img {
+        color: $main-color;
+        width: 100%;
+    }
+}

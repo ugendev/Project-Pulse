@@ -47,6 +47,26 @@
     &_thanks {
         min-height: 140px;
     }
+
+    button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .error {
+        border: 1px solid red;
+    }
+
+    label.error {
+        display: block;
+        text-align:center;
+        border: none;
+        margin-bottom: 10px;
+
+        &:nth-child(4) {
+            margin-top: 10px;
+        }
+    }
 }
 
 .fadeIn {

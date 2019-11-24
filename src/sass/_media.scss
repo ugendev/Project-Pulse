@@ -194,6 +194,40 @@
 			width: 40px;
 		}
 	}
+
+	.modal {
+		padding: 25px 30px 30px;
+		width: 320px;
+		min-height: 340px;
+		
+		&__title {
+			font-size: 16px;
+		}
+	
+		&__subtitle {
+			margin-top: 4px;
+			margin-bottom: 22px;
+			font-size: 12px;
+		}
+	
+		&__x {
+			font-size: 30px;
+			top: -16px;
+			right: -26px;
+		}
+
+		.form {
+			&__input {
+				padding: 12px;
+				font-size: 12px;
+			}
+		}
+
+		.button {
+			margin-top: 28px;
+			font-size: 14px;
+		}
+	}
 }
 
 @media ( max-width: 1000px ) {
@@ -448,6 +482,39 @@
 		}
 	}
 
+	.modal {
+		padding: 20px 25px 25px;
+		width: 300px;
+		min-height: 300px;
+		
+		&__title {
+			font-size: 14px;
+		}
+	
+		&__subtitle {
+			margin-top: 3px;
+			margin-bottom: 19px;
+			font-size: 10px;
+		}
+	
+		&__x {
+			font-size: 22px;
+			top: -12px;
+			right: -20px;
+		}
+
+		.form {
+			&__input {
+				padding: 10px;
+				font-size: 10px;
+			}
+		}
+
+		.button {
+			margin-top: 22px;
+			font-size: 13px;
+		}
+	}
 }
 
 @media ( max-width: 760px ) {
@@ -676,6 +743,44 @@
 			width: 25%;
 		}
 	}
+
+	.modal {
+		padding: 15px 20px 20px;
+		width: 280px;
+		min-height: 280px;
+		
+		&__title {
+			font-size: 12px;
+		}
+	
+		&__subtitle {
+			margin-top: 3px;
+			margin-bottom: 18px;
+			font-size: 10px;
+		}
+	
+		&__x {
+			font-size: 22px;
+			top: -12px;
+			right: -20px;
+		}
+
+		.form {
+			&__input {
+				padding: 10px;
+				font-size: 10px;
+			}
+		}
+
+		.button {
+			margin-top: 22px;
+			font-size: 12px;
+		}
+	}
+
+	label.error {
+		font-size: 12px;
+	}
 }
 
 @media ( max-width: 560px ) {
@@ -828,7 +933,7 @@
 		&__tab {
 
 			div {
-				font-size: 10px;
+				font-size: 9px;
 			}
 		}
 	}
